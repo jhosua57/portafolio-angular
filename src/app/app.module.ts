@@ -14,6 +14,7 @@ import { PortafolioComponent } from './pages/portafolio/portafolio.component';
 import { AboutComponent } from './pages/about/about.component';
 import { ItemComponent } from './pages/item/item.component';
 import { from } from 'rxjs';
+import { ProductosComponent } from './services/productos/productos.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { from } from 'rxjs';
     FooterComponent,
     PortafolioComponent,
     AboutComponent,
-    ItemComponent
+    ItemComponent,
+    ProductosComponent
   ],
   imports: [
     BrowserModule,
