@@ -15,6 +15,7 @@ import { AboutComponent } from './pages/about/about.component';
 import { ItemComponent } from './pages/item/item.component';
 import { from } from 'rxjs';
 import { ProductosComponent } from './services/productos/productos.component';
+import { SearchComponent } from './pages/search/search.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { ProductosComponent } from './services/productos/productos.component';
     PortafolioComponent,
     AboutComponent,
     ItemComponent,
-    ProductosComponent
+    ProductosComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule,

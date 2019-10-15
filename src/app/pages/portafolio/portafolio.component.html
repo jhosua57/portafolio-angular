@@ -20,9 +20,9 @@
 </div>
 <!-- FIN SVG LOADING -->
 
-  <div *ngIf="!infoProductoService.cargando" class="ae-masonry ae-masonry-md-2 ae-masonry-xl-4">
+  <div *ngIf="!infoProductoService.cargando" class="animated fadeIn ae-masonry ae-masonry-md-2 ae-masonry-xl-4">
     
-    <a *ngFor="let producto of infoProductoService.productos" routerLink='/item' class="rk-item ae-masonry__item">
+    <a *ngFor="let producto of infoProductoService.productos" [routerLink]="['/item', producto.cod]" class="rk-item ae-masonry__item">
       <img src="assets/productos/{{producto.url}}.jpg" alt=""> 
       <div class="item-meta">
         <h2>{{ producto.titulo}}</h2>
